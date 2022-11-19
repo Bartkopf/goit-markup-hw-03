@@ -2,12 +2,43 @@
   --title-color: #212121;
   --accent-color: #2196f3;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  padding-left: 0px;
+}
+button {
+  cursor: pointer;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   background-color: #ffffff;
   color: #757575;
   letter-spacing: 0.03em;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  outline: 2px solid tomato;
+  
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .link {
   color: #757575;
@@ -38,6 +69,15 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: black;
+
+  display: flex;
+}
+
+.header-list .item {
+  margin-right: 50px;
+}
+.header-list .item:last-child {
+  margin-right: 0;
 }
 .header-link {
   color: black;
@@ -50,7 +90,16 @@ a {
   letter-spacing: 0.02em;
 
   color: #757575;
+
+  display: flex;
+ 
 }
+
+
+.header-list-cont .item + .item {
+  margin-left: 40px;
+}
+
 .header-link-nav {
   color: var(--accent-color);
 }
@@ -65,7 +114,15 @@ a {
 /* Герой */
 .hero {
   background: #2f303a;
+  width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: auto auto;
+
+  text-align: center;
 }
+
 .hero-title {
   font-family: Roboto;
   font-style: normal;
@@ -78,6 +135,7 @@ a {
 
   color: #ffffff;
 }
+
 .hero-btn {
   background-color: var(--accent-color);
   font-weight: 700;
@@ -87,6 +145,11 @@ a {
   letter-spacing: 0.06em;
   color: white;
   letter-spacing: 0.06em;
+
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
 }
 .btn {
   font-family: inherit;
@@ -102,6 +165,8 @@ a {
   cursor: pointer;
 }
 /* Наші переваги */
+.benefits {
+}
 .hidden {
   position: absolute;
   width: 1px;
@@ -180,6 +245,8 @@ address {
 .header-link-second {
   color: var(--title-color);
 }
+
+
 .hero-btn-port {
   font-family: 'Roboto';
   font-style: normal;
